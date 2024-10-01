@@ -5,64 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUMBBAD</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
     <style>
-        form{
-            outline: 3px solid black;
-            
+        form {
+          
+            border: 1px solid gray;
+            width: 20%;
+
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.678);
+            box-sizing: border-box;
+        }
+
+        * {
+            font-family: Roboto;
+        }
+
+      
+
+        body {
+            \display: flex;
             justify-content: center;
             align-items: center;
-            height: 40vh;
+            height: 100vh;
         }
+
+        .form-title {
+            text-align: center;
+            font-family: Roboto;
+        }
+        .head{
+            text-align: center;
+        }
+        .det{
+            text-align: center;
+        }
+        .about{
+            text-align: center;
+        }
+        .for{
+            text-align: center;
+        }
+       
     </style>
 </head>
 
 <body>
-    <h1>Movie ticket booking form</h1>
-    <img src="movie.jpg" width="400" alt="movie poster">
-    <h1>Movie-TUMBBAD</h1>
-    <h6>Time period-1h 53m , Genre-Fantasy,Horror , Release date-12Oct,2018
+    <h1 class="head">Movie ticket booking form</h1>
+    <img src="movie.jpg" width="400" alt="movie poster" class="pic">
+    <h1 class="form-title">Movie-TUMBBAD</h1>
+    <h6 class="det">Time period-1h 53m , Genre-Fantasy,Horror , Release date-12Oct,2018
     </h6>
-    
-    <h5>About-A mythological story about a goddess who created the entire universe. The plot revolves around the consequences when humans build a temple for her first-born.
+
+    <h5 class="about">About-A mythological story about a goddess who created the entire universe. The plot revolves around the
+        consequences when humans build a temple for her first-born.
     </h5>
     <button type="submit">Book tickets</button>
     <br><br>
-<form >
-    <label>Name:</label>
-    <input placeholder="" type="text">
-    <br><br>
-    <label>Email:</label>
-    <input placeholder="" type="email" required>
-    <br><br>
-    <label>Phone:</label>
-    <input type="number" placeholder="" required>
-    <br><br>
-    <label">Select date:</label>
-    <input type="date" placeholder="" required>
-    <br><br>
-    <label>Select time:</label>
-    <select> <option >10:00AM</option>
-        <OPtion>1:00PM</OPtion>
-        <OPtion>4:00PM</OPtion>
-        <OPtion>7:00PM</OPtion></select>
-       
-    
-    <br><br>
-    <label>Select no. of seats:</label>
-    <input type="number">
-    <br><br>
-    <label>Seat type:</label>
-    <input type="radio" name="Seat type:"> Recliner       
-    <input type="radio" name="Seat type:"> Royal
-    <input type="radio" name="Seat type:"> Excutive       
-   
-    <br><br>
-   <button style="background-color: darkgreen; color: aliceblue;" type="button"> SUBMIT </button>
+    <form class="for">
+        <label>Name:</label>
+        <input placeholder="" type="text">
+        <br><br>
+        <label>Email:</label>
+        <input placeholder="" type="email" required>
+        <br><br>
+        <label>Phone:</label>
+        <input type="number" placeholder="" required>
+        <br><br>
+        <label">Select date:</label>
+            <input type="date" placeholder="" required>
+            <br><br>
+            <label>Select time:</label>
+            <select>
+                <option>10:00AM</option>
+                <OPtion>1:00PM</OPtion>
+                <OPtion>4:00PM</OPtion>
+                <OPtion>7:00PM</OPtion>
+            </select>
+
+
+            <br><br>
+            <label>Select no. of seats:</label>
+            <input type="number">
+            <br><br>
+            <label>Seat type:</label>
+            <input type="radio" name="Seat type:"> Recliner
+            <input type="radio" name="Seat type:"> Royal
+            <input type="radio" name="Seat type:"> Excutive
+
+            <br><br>
+            <button style="background-color: darkgreen; color: aliceblue;" type="button"> SUBMIT </button>
 
 
 
 
-</form>
+    </form>
 
 
 </body>
