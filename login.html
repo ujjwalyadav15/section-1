@@ -16,7 +16,7 @@
 
         .card {
             border: 1px solid gray;
-            width: 20%;
+            width: 100%;
 
             border-radius: 10px;
             padding: 30px;
@@ -32,10 +32,13 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: antiquewhite;
-            background-image: url('');
+            \background-color: antiquewhite;
+            background-image: url(https://th.bing.com/th/id/R.ea80e8bcf70c0a180cdc6905afb3f1c1?rik=AOnT7YkygFDSYg&riu=http%3a%2f%2fbackgroundcheckall.com%2fwp-content%2fuploads%2f2017%2f12%2fwebsite-background-design.jpg&ehk=wPsIeo20SzI7GQwdyLJG6CMUKL9Awn4f6CnGiNdUxJg%3d&risl=&pid=ImgRaw&r=0
+);
+
             background-size: cover;
         }
+
         .form-title {
             text-align: center;
             font-family: Roboto;
@@ -73,6 +76,22 @@
         .link:hover {
             color: blueviolet;
             text-decoration: underline;
+        }
+
+        @media screen and (min-width:768px) {
+            .card {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            .card {
+                width: 20%;
+            }
+
+            .form-title {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
