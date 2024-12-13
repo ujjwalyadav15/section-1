@@ -44,3 +44,29 @@ for (let i = 2; i< num1; i++){
     }
 }
 if(prime) console.log('prime');
+console.log('-------------');
+
+let n=10;
+while(n<=20){
+    console.log(n);
+    n = n+2;
+}
+
+console.log('-------------');
+
+let k=1;
+do{
+    k++;
+    console.log(k);
+   
+}while(k<10);
+
+console.log('-------------');
+
+const arr = [1,2,3,44,55,6,7,81,9,10];
+for(let i of arr){
+    console.log(i)
+}
+console.log('-------------');
+
+arr.forEach

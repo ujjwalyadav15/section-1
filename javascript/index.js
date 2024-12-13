@@ -18,8 +18,3 @@ console.log(typeof price);
 console.log( 1==1);
 console.log('1'==1);//check values
 console.log('1'===1);//check value + type
-
-
-
-
-
